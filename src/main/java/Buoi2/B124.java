@@ -5,27 +5,21 @@ import java.util.Scanner;
 
 public class B124 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Nhập kích thước mảng : ");
-        int n = in.nextInt();
-        in.close();
-        if (n < 1) {
-            System.out.println("Kích thước mảng không hợp lệ!!!");
-            System.exit(0);
+    int[] testArr = {0,1999,3001,2001,2000,2005};
+    // Duyệt mảng
+        // Chỉ cần tìm giá trị đầu tiên thỏa mãn
+        boolean check = false;
+        for (int i=0; i<testArr.length; i++){
+            if(testArr[i] % 2 ==0 && testArr[i] <2004){
+                check = true;
+                break;
+            }
         }
-        Random random = new Random();
-        //  Tạo mảng
-        int[] arr = new int[n];
-        // Lặp n lần
-        // Mỗi lần lặp --> gán giá trị ngẫu nhiên cho mảng vừa lập
-        for (int i = 0; i < n; i++) {
-            arr[i] = random.nextInt(9999);
+        if(check){
+            System.out.println("Có giá trị thỏa mãn");
         }
-        for (int i = 0; i < n; i++) {
-            System.out.printf("arr[%d]=%d \n", i, arr[i]);
-        }
-        for ( int i=0 ; i <n; i++){
-
+        else {
+            System.out.println("Khong Có giá trị thỏa mãn");
         }
     }
 }
