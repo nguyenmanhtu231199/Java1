@@ -25,12 +25,14 @@ public class B123 {
                 System.out.printf("arr[%d]=%d \n", i, arr[i]);
             }
             int min = arr[0];
+            int indexMin = 0;
             for (int i = 0; i < arr.length; i++) {
                 if (arr[i] < min) {
+                    indexMin = i;
                     min = arr[i];
                 }
             }
-            System.out.println("Gia tri nho nhat" + min);
+            System.out.printf("Gia tri nho nhat la %d, o vi tri : ", min,indexMin);
         }
 
 }
