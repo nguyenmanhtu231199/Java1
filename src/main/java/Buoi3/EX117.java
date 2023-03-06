@@ -8,7 +8,7 @@ public class EX117 {
     //3^-2 = 1/(3*3)
     public  static double luyThua(double a, int b){
         // Trị tuyệt đối của b
-        if(b==0) return 1;
+        if(b==0) return -1;
         int _b = Math.abs(b);
         double t = 1;
         for(int i = 0; i < _b; i++){
