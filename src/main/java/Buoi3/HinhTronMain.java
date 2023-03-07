@@ -50,6 +50,5 @@ public class HinhTronMain {
 //            }
 //        }
 //        System.out.println(count);
-
     }
 }
