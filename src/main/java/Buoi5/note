@@ -1,0 +1,14 @@
+Tính đóng gói:
+Keyword : Access modifier ( default , public protected, private)
+Tính kế thừa :
+KEYWORD : từ cha (super) sang con (sub)
+class A extends B
+Tính đa hình
+keyword: override (ghi đè), overload(nạp chồng)
+public sum(a,b): double
+public sum(a,b,c): double
+Tính trừu tượng
+Vd: class Animal , có 1 phương thức makesound()?
+dog,pig --> kế thừa từ Anemal
+=> sau này có thể mở rộng nhiều Anemal nữa
+Lớp trừu tượng không trực tiếp tạo ra dối tượng mà phải tạo thông qua lớp con
